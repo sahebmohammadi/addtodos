@@ -1,0 +1,126 @@
+.App {
+  text-align: center;
+}
+
+/* Image style */
+.App img {
+  width: 300px;
+  height: 200px;
+}
+
+/* Input box style */
+.input {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.todo-input {
+  padding: 0 0.7rem 0.2rem;
+  width: 50%;
+  margin: 20px 0;
+  border: 3px solid rgb(223, 223, 223);
+  border-radius: 4px;
+}
+.todo-input :focus {
+  border-color: rgb(93, 93, 93);
+  outline: none;
+}
+.todo-input::placeholder {
+  color: rgba(185, 185, 185, 0.787);
+  font-weight: bold;
+}
+.todo-button {
+  border: none;
+  background: #ffffff;
+  font-size: 2.4rem;
+  color: rgb(223, 223, 223);
+  padding-left: 10px;
+  cursor: pointer;
+}
+.todo-button:hover {
+  color: rgb(93, 93, 93);
+  transition: all 0.4s ease;
+}
+
+/* StatusHandler */
+
+select {
+  padding: 0.2rem;
+  margin: 0;
+  border: none;
+  border-bottom: 5px solid rgb(223, 223, 223);
+  border-radius: 3px;
+  cursor: pointer;
+  color: rgba(185, 185, 185, 0.787);
+  font-weight: bold;
+  font-size: 1rem;
+}
+select:hover {
+  border-bottom-color: rgb(93, 93, 93);
+  color: rgb(93, 93, 93);
+  transition: all 0.2s ease;
+}
+
+select:focus {
+  outline: none;
+  border-bottom-color: rgb(58, 186, 187);
+}
+select option {
+  background-color: rgb(223, 223, 223);
+}
+
+/* List Style */
+.todo-container {
+  width: 100%;
+  display: felx;
+  justify-content: left;
+}
+ul.todo-list {
+  list-style: none;
+  padding: 0 20px;
+  width: calc(100%-20px);
+}
+.todo {
+  display: flex;
+}
+
+.todo-item {
+  width: 100%;
+  padding: 5px;
+  margin: 5px;
+  margin-right: 0;
+  background-color: rgb(93, 93, 93);
+  color: #ffffff;
+  text-align: justify;
+}
+input.todo-item:focus {
+    outline: none;
+  }
+  .todo button {
+    margin: 5px 0 5px;
+    border: none;
+    color: #ffffff;
+    padding: 8px 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  .todo button:hover {
+    color: rgb(93, 93, 93);
+    transition:all 0.4s ease;
+  }
+  .todo button:focus {
+    outline: none;
+  }
+  .complete-btn {
+    background-color: #2ecc71;
+  }
+  .delete-btn {
+    background-color: #e74c3c;
+  }
+  
+  
+  .completed {
+    background-color: green;
+    font-size: 0.8rem;
+  }

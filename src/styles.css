@@ -1,10 +1,27 @@
-.App {
-  font-family: sans-serif;
-  text-align: center;
-  width : 400px;
-  margin :20px auto;
-}
 
 .completedclass{
   background-color: #03dac5 !important;
+}
+
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: rgb(160, 160, 160);
+  display: flex;
+  justify-content: center;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#root {
+  background: #ffffff;
+  width: 100%;
+  height: calc(100vh - 20px);
+  margin: 10px;
+  border-radius: 10px;
+  overflow-x: hidden; 
+  overflow-y: auto;
 }

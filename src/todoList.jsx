@@ -1,8 +1,11 @@
 import React from "react";
+// Importing components
 import Todo from "./todo";
-const TodoList = ({ setTodos, todos,filteredTodos }) => {
+
+const TodoList = ({ setTodos, todos, filteredTodos }) => {
+  //  Handlers
   const deleteTodoHandler = (id) => {
-    console.log(id);
+    // console.log(id);
     setTodos(todos.filter((el) => el.id !== id));
   };
   const completeHandeler = (todo) => {
@@ -14,24 +17,22 @@ const TodoList = ({ setTodos, todos,filteredTodos }) => {
         return item;
       })
     );
-    
   };
 
   return (
-    <>
-      <div>
-        <ul> todoList</ul>
+    <div className="todo-container">
+      <ul className = "todo-list">
         {filteredTodos.map((todo) => (
           <Todo
-            todo={todo}                                                                                                                                                                                                                                                                                                       
+            todo={todo}
             key={todo.id}
             text={todo.text}
             onDelete={() => deleteTodoHandler(todo.id)}
             onComplete={() => completeHandeler(todo)}
           />
         ))}
-      </div>
-    </>
+      </ul>
+    </div>
   );
 };
 export default TodoList;
