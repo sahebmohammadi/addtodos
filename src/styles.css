@@ -1,0 +1,10 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  width : 400px;
+  margin :20px auto;
+}
+
+.completedclass{
+  background-color: #03dac5 !important;
+}
